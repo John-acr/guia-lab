@@ -1,0 +1,39 @@
+<!DOCTYPE html >
+<html lang = "en" >
+<head >
+ <meta charset = "UTF-8" >
+ <meta name = "viewport" content = "width=device-width,initial-scale=1.0" >
+ <meta http-equiv = "X-UA-Compatiple" content = "ie=edge" >
+ <title > Trabajo </title >
+  <style type = "text/css" >
+ body{
+     background-color: rgb(224, 248, 255);
+     text-decoration: blanchedalmond;
+
+ }
+</style>   
+</head >
+<body >
+ <fieldset >
+ <legend > Digite un numero que hará de límite en: 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5 ... </legend >
+ <label for = "" > Introduce el número: </label >
+ <input type = "text" id = "N1" >
+ <br ><br>
+ <input type = "button" onclick = " serie ();" value = "Calcular" >
+ </fieldset >
+</body >
+ <script type = "text/javascript" >
+ function serie () { 
+ var numero = document . getElementById ( 'N1' ). value ;
+ var rep ;
+ var serie = [];
+ for ( var i = 1 ; i <= numero ; i ++) {
+    for ( rep = 1 ; rep <= i ; rep ++) {
+        serie[serie.length] = i;
+    }
+}
+    document.write (serie);
+ }
+
+</script>
+</html>
